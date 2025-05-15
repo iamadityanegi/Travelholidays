@@ -1,0 +1,27 @@
+<!-- <div class="modal-backdrop" id="bt1" (click)="closePopup()"></div> -->
+<div class="modal-content" *ngIf="popupFlag">
+  <button class="close-btn" id="bt2" (click)="closePopup()">×</button>
+  <div class="rating-badge">⭐ 4.8/5 on Google</div>
+
+  <h2>Planning a trip? We’re here to help!</h2>
+  <p>Share a few details and we’ll craft the perfect holiday just for you. ✨</p>
+
+  <form>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name" />
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number" />
+
+    <label>Destination Descripton</label>
+    <input type="text" placeholder="Where would you like to travel? (e.g., Bali, Europe)" />
+
+    <p class="privacy-note">
+      By submitting this form, you agree to our 
+      <a href="#">Privacy Policy</a> & 
+      <a href="#">User Agreement</a>.
+    </p>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,133 @@
+/* Backdrop overlay */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* Popup container */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 480px;
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.4s ease;
+  text-align: center;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Heading */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Subtext */
+p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: #000;
+}
+
+/* Input Labels */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Rating badge */
+.rating-badge {
+  background-color: #16230a;
+  color: #856404;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 16px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Privacy note */
+.privacy-note {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: #666;
+}
+.privacy-note a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #94e00f;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #090801;
+}

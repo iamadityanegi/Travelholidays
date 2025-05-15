@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent implements OnInit {
+  showPopup = true;
+
+  ngOnInit(): void {
+    // Show popup when page loads
+    // this.openPopup();
+  }
+
+  openPopup() {
+    this.showPopup = true;
+  }
+
+  // closePopup() {
+  //   this.showPopup = false;
+  // }
+}

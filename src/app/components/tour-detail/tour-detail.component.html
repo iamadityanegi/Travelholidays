@@ -1,0 +1,10 @@
+<div *ngIf="tour">
+    <h2>{{ tour.name }}</h2>
+    <img [src]="tour.imageUrl" alt="{{ tour.name }}">
+    <p>{{ tour.description }}</p>
+    <p>Location: {{ tour.location }}</p>
+    <p>Price: ₹{{ tour.price }}</p>
+  
+     <app-contact-form [tour]="tour"></app-contact-form> 
+  </div>
+  

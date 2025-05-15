@@ -1,0 +1,10 @@
+
+<span class="contact">Contact Us</span>
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+    <input formControlName="name" placeholder="Your Name">
+    <input formControlName="email" placeholder="Your Email">
+    <input formControlName="contact" placeholder="Your contact">
+    <textarea formControlName="message" placeholder="Enter Your Desired Package and Date"></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
+  

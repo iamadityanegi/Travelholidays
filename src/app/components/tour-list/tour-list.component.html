@@ -1,0 +1,10 @@
+<div class="tour-list">
+    <div *ngFor="let tour of tours" class="tour-card">
+      <img [src]="tour.imageUrl" alt="{{ tour.name }}">
+      <h3>{{ tour.name }}</h3>
+      <p>{{ tour.location }}</p>
+      <p>₹{{ tour.price }}</p>
+      <button (click)="viewDetails(tour.id)">View Details</button>
+      <button (click)="bookNow()">Book now</button>
+    </div>
+  </div>
