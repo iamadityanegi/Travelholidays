@@ -11,7 +11,7 @@ import { TourService } from 'src/app/services/tour.service';
 
 export class TourListComponent implements OnInit {
   tours: TourPackage[] = [];
-
+ popupVisible: boolean = false;
   constructor(private tourService: TourService, private router: Router) {}
 
   ngOnInit(): void {
@@ -21,8 +21,16 @@ export class TourListComponent implements OnInit {
   viewDetails(id: number) {
     this.router.navigate(['/tour', id]);
   }
-  bookNow(){
-      this.router.navigate(['/travelpopup' ]);
+ 
+
+bookNow() {debugger
+  this.popupVisible = true;
+}
+  closePopup() {debugger
+    // this.close.emit();
+    // this.router.navigate([' ' ]);
+
+    this.popupVisible = false;
   }
   
   }

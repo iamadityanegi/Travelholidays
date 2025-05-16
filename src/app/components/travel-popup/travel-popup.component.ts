@@ -14,8 +14,7 @@ export class TravelPopupComponent {
   constructor(private router: Router) {}
 
   closePopup() {
-    // this.close.emit();
-    // this.router.navigate([' ' ]);
+   
 
     this.popupFlag = false;
   }
