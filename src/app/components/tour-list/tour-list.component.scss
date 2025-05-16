@@ -1,11 +1,14 @@
 .tour-list {
-display: flex;
-  flex-direction: row;
-    gap: 2rem;
-    padding: 2rem;
-  }
+display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f0f4f8;
+}
+  
   
   .tour-card {
+
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -37,4 +40,25 @@ display: flex;
     margin: 0.25rem 0;
     color: #555;
   }
+  .tourbutton {
+  background-color: #6387ae; /* Bootstrap primary color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.tourbutton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+  
   

@@ -26,3 +26,24 @@ header {
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+// ss
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85); /* dark background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled a {
+  color: #fff; /* or whatever matches your design */
+}
+//

@@ -16,7 +16,9 @@ constructor(private fb: FormBuilder) {
   this.form = this.fb.group({
     name: [''],
     email: [''],
-    message: ['']
+    message: [''],
+    phone: [''],
+    destination: ['']
   });
 }
 

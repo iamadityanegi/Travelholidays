@@ -1,11 +1,25 @@
-<header class="sticky-header">
+<!-- <header class="sticky-header">
     <div class="logo">
       <h1 >Treo Holidays</h1>
     </div>
     <nav>
       <a routerLink="/">Home</a>
       <a routerLink="/tourList">Tours</a>
-      <a routerLink="/contact">Contact</a>
+      <a (click)="scrollToContact()">Contact</a>
+    
     </nav>
   </header>
-  
+   -->
+  <nav [class.scrolled]="isScrolled" class="navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#" ><img style="height: 25px; width: 25px ;" src="assets/images/logo.jpeg"></a>
+     <a routerLink="/">Home</a>
+      <a routerLink="/tourList">Tours</a>
+      <div>
+        <a routerLink="/">our service</a>
+        </div>
+      <a (click)="scrollToContact()">Contact</a>
+    
+    <!-- Nav links here -->
+  </div>
+</nav>

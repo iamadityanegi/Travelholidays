@@ -1,4 +1,5 @@
-
+<!-- 
+<div style="height: 100vh; background-color: aqua;">
 <span class="contact">Contact Us</span>
 <form [formGroup]="form" (ngSubmit)="submitForm()">
     <input formControlName="name" placeholder="Your Name">
@@ -7,4 +8,77 @@
     <textarea formControlName="message" placeholder="Enter Your Desired Package and Date"></textarea>
     <button type="submit">Send Inquiry</button>
   </form>
+  </div> -->
+<div class="container py-5">
+  <div style="width: 100%; background-color: aqua;display: flex;"><div style="width: 60%; background-color: rgb(255, 255, 255);">
+  <h1 class="display-4 mb-4">Contact Us</h1>
+  <p class="lead mb-5">Looking for a travel Partner? We have a deal to get you one.</p>
+
+  <form [formGroup]="form" (ngSubmit)="submitForm()" class="row g-3">
+    <div class="col-md-6">
+      <input type="text" class="form-control" formControlName="name" placeholder="Name" />
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" formControlName="phone" placeholder="Phone Number" />
+
+    </div>
+     <div class="col-md-6">
+      <input type="text" class="form-control" formControlName="phone" placeholder="email" />
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control" formControlName="destination" placeholder="Destination" />
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-dark">Contact Us</button>
+    </div>
+  </form>
+  </div>
+  <div style="width: 40%; background-color: rgb(255, 255, 255);">
+ 
+    
+  </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-3">
+      <h5>Themes</h5>
+      <ul class="list-unstyled">
+        <li>Women Special</li>
+        <li>BnBs</li>
+        <li>Short Break</li>
+        <li>Mountains</li>
+        <li>Family</li>
+        <li>Romantic</li>
+        <li>Wildlife</li>
+        <li>Cruise</li>
+        <li>Beach</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h5>Company</h5>
+      <ul class="list-unstyled">
+        <li>About us</li>
+        <li>Holidays</li>
+        <li>Our Partners</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h5>Legal</h5>
+      <ul class="list-unstyled">
+        <li>Terms and conditions</li>
+        <li>Privacy policy</li>
+        <li>Cookies policy</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h5>Contact</h5>
+      <ul class="list-unstyled">
+        <li>+91-89700 34810</li>
+        <li>travelinfo@treoholidays.com</li>
+      </ul>
+    </div>
+  </div>
+
   
+</div>
